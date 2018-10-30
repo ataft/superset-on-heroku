@@ -3,13 +3,11 @@
   "description": "Data exploration platform designed to be visual, intuitive, and interactive",
   "logo": "https://cdn.rawgit.com/airbnb/superset/master/superset/assets/images/superset_logo.png",
   "repository": "https://github.com/zintj/superset-on-heroku",
-  "addons": [
-    { "plan": "heroku-postgresql" }
-  ],
   "buildpacks": [
     { "url": "heroku/python" }
   ],
   "env": {
+    "DATABASE_URL": "postgres://nktvytcoolugwx:d5ed7b72ca2957c33cc52a7b03f4a245fab0e835497b2914ec3f09f892e27cf8@ec2-54-225-98-131.compute-1.amazonaws.com:5432/d26jr7qqh5o9gp",
     "SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
